@@ -30,7 +30,9 @@ class Owner
     puts "#{species}"
   end
 
+  def pets
 
+  end
 
 end
 
