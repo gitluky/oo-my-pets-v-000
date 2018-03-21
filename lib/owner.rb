@@ -9,7 +9,7 @@ class Owner
   end
 
   def self.owner_count
-    self.class.all.count
+    all.count
   end
 
   def self.all
@@ -17,7 +17,7 @@ class Owner
   end
 
   def self.reset_all
-    self.class.all.clear
+    all.clear
   end
 
 end
