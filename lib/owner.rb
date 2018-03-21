@@ -49,7 +49,7 @@ class Owner
   end
 
   def feed_fish
-    pets[:cfishes].each {|fish| cat.fish = 'happy'}
+    pets[:fishes].each {|fish| cat.fish = 'happy'}
   end
 
   def sell_pets
