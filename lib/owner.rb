@@ -5,10 +5,10 @@ require_relative './lib/fish.rb'
 
 class Owner
   @@all = []
-  attr_reader :owner_type
+  attr_reader :species
 
-  def initialize(owner_type)
-    @owner_type = owner_type
+  def initialize(species)
+    @species = species
     self.class.all << self
   end
 
