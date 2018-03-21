@@ -42,6 +42,10 @@ class Owner
   def buy_dog
     pets[:dog] << dog unless !dog.is_a?(Dog)
   end
+
+  def walks_dogs
+    pets[dog].each {|dog| dog.mood = 'happy'}
+  end
   
 
 new_owner = Owner.new
