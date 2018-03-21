@@ -4,7 +4,7 @@ class Owner
   @@owners = []
 
   def initialize
-    @@owners << self
+    self.class.owners << self
   end
 
   def self.owner_count
