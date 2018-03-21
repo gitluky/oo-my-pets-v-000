@@ -1,4 +1,7 @@
 require 'pry'
+require_relative './lib/cat.db'
+require_relative './lib/dog.db'
+require_relative './lib/fish.db'
 
 class Owner
   @@all = []
