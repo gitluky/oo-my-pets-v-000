@@ -2,8 +2,10 @@ require 'pry'
 
 class Owner
   @@all = []
+  attr_reader :owner_type
 
-  def initialize
+  def initialize(owner_type)
+    @owner_type = owner_type
     self.class.all << self
   end
 
