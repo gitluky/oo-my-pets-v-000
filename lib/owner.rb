@@ -36,14 +36,10 @@ class Owner
   end
 
   def buy_cat
-
+    pets[:cat] << cat unless !cat.is_a?(Cat)
   end
 
   def buy_dog
-
-  end
-
-
-end
+    pets[:dog] << dog unless !dog.is_a?(Dog)
 
 new_owner = Owner.new
