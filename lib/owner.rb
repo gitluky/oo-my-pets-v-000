@@ -11,4 +11,8 @@ class Owner
     @@owners.count
   end
 
+  def owners
+    @@owners
+  end
+
 end
