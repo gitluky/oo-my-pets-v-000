@@ -1,22 +1,22 @@
 require 'pry'
 
 class Owner
-  @@owners = []
+  @@all = []
 
   def initialize
     self.class.owners << self
   end
 
   def self.owner_count
-    owners.count
+    all.count
   end
 
-  def owners
-    @@owners
+  def self.all
+    @@all
   end
 
-  def reset_owners
-    self.class.owners.clear
+  def reset_all
+    self.class.all.clear
   end
 
 end
