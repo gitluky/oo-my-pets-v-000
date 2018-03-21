@@ -55,4 +55,10 @@ class Owner
     pets[:cfishes].each {|fish| cat.fish = 'happy'}
   end
 
+  def sell_pets
+    pets.each do |pet_type, pet|
+      pet.each {|name| name.mood = 'nervous'}
+    end
+  end
+
 new_owner = Owner.new
