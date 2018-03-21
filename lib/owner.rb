@@ -1,7 +1,7 @@
 require 'pry'
-require_relative './lib/cat.db'
-require_relative './lib/dog.db'
-require_relative './lib/fish.db'
+require_relative './lib/cat.rb'
+require_relative './lib/dog.rb'
+require_relative './lib/fish.rb'
 
 class Owner
   @@all = []
