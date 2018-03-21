@@ -15,4 +15,8 @@ class Owner
     @@owners
   end
 
+  def reset_owners
+    self.class.owners.clear
+  end
+
 end
