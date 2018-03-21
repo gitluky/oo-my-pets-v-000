@@ -12,7 +12,7 @@ class Owner
   def initialize(species)
     @species = species
     self.class.all << self
-    @pets = {cat: [], dog: [], fish: []}
+    @pets = {cats: [], dogs: [], fishes: []}
   end
 
   def self.owner_count
@@ -32,20 +32,23 @@ class Owner
   end
 
   def buy_fish(fish)
-    pets[:fish] << fish unless !fish.is_a?(Fish)
+    pets[:fishes] << fish unless !fish.is_a?(Fish)
   end
 
   def buy_cat
-    pets[:cat] << cat unless !cat.is_a?(Cat)
+    pets[:cats] << cat unless !cat.is_a?(Cat)
   end
 
   def buy_dog
-    pets[:dog] << dog unless !dog.is_a?(Dog)
+    pets[:dogs] << dog unless !dog.is_a?(Dog)
   end
 
   def walks_dogs
     pets[:dogs].each {|dog| dog.mood = 'happy'}
   end
 
+  def play_with_cats
+    pets[:cats].each {|cat| cat.mood = 'happy'}
+  end
 
 new_owner = Owner.new
