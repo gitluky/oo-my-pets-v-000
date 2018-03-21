@@ -24,6 +24,10 @@ class Owner
     self.all.clear
   end
 
+  def species
+    puts species
+  end
+
 end
 
 new_owner = Owner.new
