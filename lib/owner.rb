@@ -31,8 +31,8 @@ class Owner
     puts "#{species}"
   end
 
-  def buy_fish
-    pets[fish] << fish unless !fish.is_a?(Fish)
+  def buy_fish(fish)
+    pets[:fish] << fish unless !fish.is_a?(Fish)
   end
 
   def buy_cat
