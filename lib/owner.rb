@@ -8,7 +8,7 @@ class Owner
   end
 
   def self.owner_count
-    @@owners.count
+    owners.count
   end
 
   def owners
