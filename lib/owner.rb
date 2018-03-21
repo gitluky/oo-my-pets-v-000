@@ -4,6 +4,7 @@ class Owner
   @@all = []
 
   def initialize
+    binding.pry
     self.class.all << self
   end
 
@@ -20,3 +21,5 @@ class Owner
   end
 
 end
+
+new_owner = Owner.new
