@@ -40,7 +40,7 @@ class Owner
     pets[:dogs] << Dog.new(dog)
   end
 
-  def walks_dogs
+  def walk_dogs
     pets[:dogs].each {|dog| dog.mood = 'happy'}
   end
 
@@ -49,7 +49,7 @@ class Owner
   end
 
   def feed_fish
-    pets[:fishes].each {|fish| cat.fish = 'happy'}
+    pets[:fishes].each {|fish| fish.mood = 'happy'}
   end
 
   def sell_pets
