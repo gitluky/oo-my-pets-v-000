@@ -60,7 +60,7 @@ class Owner
 
   def list_pets
     pets.collect {|pet_type, pet| pet.flatten}
-    end
   end
+end
 
 new_owner = Owner.new
