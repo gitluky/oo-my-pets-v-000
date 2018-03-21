@@ -25,8 +25,10 @@ class Owner
   end
 
   def species
-    puts species
+    puts "#{species}"
   end
+
+
 
 end
 
