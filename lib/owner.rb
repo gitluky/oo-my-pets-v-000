@@ -5,6 +5,8 @@ require_relative './lib/fish.rb'
 
 class Owner
   @@all = []
+
+  attr_accessor :name
   attr_reader :species
 
   def initialize(species)
@@ -27,6 +29,8 @@ class Owner
   def species
     puts "#{species}"
   end
+
+  def
 
 
 
