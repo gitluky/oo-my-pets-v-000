@@ -63,5 +63,3 @@ class Owner
   end
 
 end
-
-new_owner = Owner.new
