@@ -12,7 +12,7 @@ class Owner
     @pets = {cats: [], dogs: [], fishes: []}
   end
 
-  def self.owner_count
+  def self.count
     self.all.count
   end
 
