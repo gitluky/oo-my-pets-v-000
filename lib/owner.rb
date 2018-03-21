@@ -32,7 +32,7 @@ class Owner
   end
 
   def buy_fish
-
+    pets[fish] << fish unless !fish.is_a?(Fish)
   end
 
   def buy_cat
