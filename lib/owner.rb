@@ -29,15 +29,15 @@ class Owner
   end
 
   def buy_fish(fish)
-    pets[:fishes] << Fish.new(fish)
+    pets[:fishes] << fish if fish.is_a?(Fish)
   end
 
-  def buy_cat
-    pets[:cats] << Cat.new(cat)
+  def buy_cat(cat)
+    pets[:cats] << cat if cat.is_a?(Cat)
   end
 
-  def buy_dog
-    pets[:dogs] << Dog.new(dog)
+  def buy_dog(dog)
+    pets[:dogs] << dog if dog.is_a?(Dog)
   end
 
   def walks_dogs
