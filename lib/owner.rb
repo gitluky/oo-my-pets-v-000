@@ -12,7 +12,7 @@ class Owner
   def initialize(species)
     @species = species
     self.class.all << self
-    @pets = {cat:nil, dog:nil, fish:nil}
+    @pets = {cat: [], dog: [], fish: []}
   end
 
   def self.owner_count
